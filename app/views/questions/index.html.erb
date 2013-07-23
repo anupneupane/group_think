@@ -1,6 +1,8 @@
 
 <%= link_to "New Question", new_question_path %><br>
 
+<h3>Questions you have edited:</h3>
+
 <ul>
   <% @questions.each do |question| %>
     <li><%= link_to question.question, question %></li>
